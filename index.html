@@ -12,22 +12,34 @@
 
     <div class="banner">
         <header>
-            <a href="" class="logo">Remit Kenya</a>
-            <div class="toggle"></div>
+            <a href="" class="logo"><span style="color: #ffa200;">Remit</span><span style="color: #023B0A;">Kenya</span></a>
+            <div class="toggle" id="toggle"></div>
         </header>
-        <img src="assets/bg.jpg" alt="">
+        <img src="assets/bg3.jpg" alt="">
         <div class="content">
-            <h2>Success by Design</h2>
+            <h2  style="color: #ffa200;">Research Solutions</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem consequuntur officiis? Dolores ipsam, doloremque dolore alias deleniti consequuntur dolor.</p>
         </div>
 
     </div>
 
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">OUR WORK</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+ 
+
 
     <!-- About -->
     <section class="about">
         <div class="contentBx">
-            <div class="heading">About Us</div>
+            <div class="heading" style="color: #ffa200;">About Us</div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias culpa provident laboriosam eligendi ullam, dolorem, dolore quo hic reprehenderit fugiat est ex praesentium maxime cupiditate facilis optio reiciendis consectetur, quidem repellendus. Impedit harum ullam, fugiat aliquam voluptatem nobis tempore.
             <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolore excepturi sint voluptatum delectus, labore minus. Reprehenderit voluptatum laboriosam ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tenetur similique nemo voluptates illo nostrum fugit facere perspiciatis, recusandae a.
 
@@ -41,30 +53,30 @@
     <!-- Services -->
 
     <section class="services">
-        <h2 class="heading">Our Services</h2>
+        <h2 class="heading"style="color: #ffa200;">Our Services</h2>
         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium numquam, iste autem et illo error illum nam sint suscipit consectetur delectus! Harum dicta eius saepe! Iste libero et facere mollitia aliquid provident dolorum eveniet.</p>
    
         <div class="container">
             
             <div class="serviceBx">
                 <div>
-                    <img src="assets/icon1.png" alt="">
-                    <h2>Design</h2>
+                    <img src="assets/research.png" alt="">
+                    <h2>Research</h2>
                 </div>
             </div>
 
             <div class="serviceBx">
                 <div>
-                    <img src="assets/icon2.png" alt="">
-                    <h2>Development</h2>
+                    <img src="assets/teaching.png" alt="">
+                    <h2>Teaching</h2>
                 </div>
             </div>
             
 
             <div class="serviceBx">
                 <div>
-                    <img src="assets/icon3.png" alt="">
-                    <h2>Development</h2>
+                    <img src="assets/marketing.png" alt="">
+                    <h2>Marketing</h2>
                 </div>
             </div>
         </div>
@@ -73,7 +85,7 @@
     <!-- Technology -->
     <section class="technology">
         <div class="contentBx">
-            <h2 class="heading">We use cutting edg technology</h2>
+            <h2 class="heading"  style="color: #023b0a;"> We use cutting edge technology</h2>
      <p class="text">
          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia, repellat consectetur et quos assumenda incidunt esse voluptas sint nostrum.
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed excepturi optio ex, perspiciatis ea. </p>
@@ -86,7 +98,7 @@
     <!-- Client -->
 
     <section class="client">
-        <h2 class="heading">Our Clients</h2>
+        <h2 class="heading" style="color: #ffa200;">Our Clients</h2>
         <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nesciunt excepturi suscipit voluptatibus, voluptate, eaque, porro hic quae assumenda atque non doloribus perspiciatis. Eaque voluptatibus iusto id eligendi error tenetur quaerat earum a architecto maxime, cum nulla, aliquam possimus nostrum!</p>
        
        
@@ -102,7 +114,7 @@
     <!-- Testimonials -->
 
     <section class="testimonials">
-        <h2 class="heading">
+        <h2 class="heading"style="color: #ffa200;">
             What Our Client says
         </h2>
         <div class="container">
@@ -130,7 +142,7 @@
     <!-- contact -->
 
     <section class="contact">
-        <h2 class="heading">Contact Us</h2>
+        <h2 class="heading"style="color: #ffa200;">Contact Us</h2>
         <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis voluptatem iusto. Est, laudantium aspernatur. Libero possimus est molestias quas nobis voluptas, eos voluptatum accusamus!
         </p>
@@ -153,7 +165,7 @@
                     <textarea type="text" placeholder="Write your message here"></textarea>
                 </div>
                 <div class="inputBx">
-                    <input type="submit" placeholder="Send">
+                    <input type="submit" value="Send">
                 </div>
                 
                 
@@ -177,6 +189,24 @@
   
     </section>
 
+    <script>
 
+        var menuBtn = document.getElementById("toggle")
+        var sideNav = document.getElementById("sideNav")
+
+
+          sideNav.style.right = "-250px";
+          menuBtn.onclick = function(){
+              if(sideNav.style.right == "-250px"){
+                  sideNav.style.right = "0";
+              }else{
+                  sideNav.style.right = "-250px"
+              }
+          }
+          
+  
+    </script>
+
+    
 </body>
 </html>
