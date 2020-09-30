@@ -156,3 +156,40 @@ width: 50%;
     align-items: center;
 
 }
+
+.technology .contentBx{
+    max-width: 800px;
+}
+
+.technology .imgBx{
+    max-width: 250px;
+}
+
+.technology .imgBx img{
+
+}
+
+.client {
+    background: #162c3b;
+    padding: 100px;
+    text-align: center;
+}
+
+.center .imgBx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.client .imgBx img{
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.client .imgBx img:hover{
+    opacity: 1;
+}
