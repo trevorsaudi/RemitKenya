@@ -5,31 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remit Kenya</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+      <!-- for on scroll animations -->
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="assets/animate.css">
+      <script src="assets/wow.min.js"></script>
+
 </head>
 <body>
     <!-- Banner -->
 
 
-    <div class="banner">
+    <div class="banner" id="home">
         <header>
-            <a href="" class="logo"><span style="color: #ffa200;">Remit</span><span style="color: #023B0A;">Kenya</span></a>
+            <a href="" class="logo wow fadeInUp" data-wow-delay="0.2s"> <span style="color: #ffa200;">Remit</span><span style="color: #023B0A;">Kenya</span> <br>  <p class="text">remitkenya@gmail.com 070000000</p></a>
+          
             <div class="toggle" id="toggle"></div>
         </header>
         <img src="assets/bg3.jpg" alt="">
         <div class="content">
-            <h2  style="color: #ffa200;">Research Solutions</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem consequuntur officiis? Dolores ipsam, doloremque dolore alias deleniti consequuntur dolor.</p>
+            <h2  style="color: #ffa200;" class="wow fadeInUp" data-wow-delay="0.4s">Research Solutions</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem consequuntur officiis? Dolores ipsam, doloremque dolore alias deleniti consequuntur dolor.</p>
         </div>
 
     </div>
 
     <nav id="sideNav">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">OUR WORK</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="/work.html">OUR WORK</a></li>
+            <li><a href="#client">CLIENTS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+           
+           
         </ul>
     </nav>
 
@@ -37,10 +50,10 @@
 
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="contentBx">
-            <div class="heading" style="color: #ffa200;">About Us</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias culpa provident laboriosam eligendi ullam, dolorem, dolore quo hic reprehenderit fugiat est ex praesentium maxime cupiditate facilis optio reiciendis consectetur, quidem repellendus. Impedit harum ullam, fugiat aliquam voluptatem nobis tempore.
+            <div class="heading wow slideInLeft" data-wow-delay="0.3s" style="color: #ffa200;">About Us</div>
+        <p class="wow fadeInUp" data-wow-delay="0.5s"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias alias culpa provident laboriosam eligendi ullam, dolorem, dolore quo hic reprehenderit fugiat est ex praesentium maxime cupiditate facilis optio reiciendis consectetur, quidem repellendus. Impedit harum ullam, fugiat aliquam voluptatem nobis tempore.
             <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dolore excepturi sint voluptatum delectus, labore minus. Reprehenderit voluptatum laboriosam ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tenetur similique nemo voluptates illo nostrum fugit facere perspiciatis, recusandae a.
 
         </p>
@@ -52,20 +65,20 @@
 
     <!-- Services -->
 
-    <section class="services">
-        <h2 class="heading"style="color: #ffa200;">Our Services</h2>
-        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium numquam, iste autem et illo error illum nam sint suscipit consectetur delectus! Harum dicta eius saepe! Iste libero et facere mollitia aliquid provident dolorum eveniet.</p>
+    <section class="services" id="services">
+        <h2 class="heading wow slideInLeft" data-wow-delay="0.3s"style="color: #ffa200;">Our Services</h2>
+        <p class="text wow fadeInUp" data-wow-delay="0.4s">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium numquam, iste autem et illo error illum nam sint suscipit consectetur delectus! Harum dicta eius saepe! Iste libero et facere mollitia aliquid provident dolorum eveniet.</p>
    
         <div class="container">
             
-            <div class="serviceBx">
+            <div class="serviceBx wow fadeInUp" data-wow-delay="0.2s">
                 <div>
                     <img src="assets/research.png" alt="">
                     <h2>Research</h2>
                 </div>
             </div>
 
-            <div class="serviceBx">
+            <div class="serviceBx wow fadeInUp" data-wow-delay="0.3s">
                 <div>
                     <img src="assets/teaching.png" alt="">
                     <h2>Teaching</h2>
@@ -73,7 +86,7 @@
             </div>
             
 
-            <div class="serviceBx">
+            <div class="serviceBx wow fadeInUp" data-wow-delay="0.4s">
                 <div>
                     <img src="assets/marketing.png" alt="">
                     <h2>Marketing</h2>
@@ -85,8 +98,8 @@
     <!-- Technology -->
     <section class="technology">
         <div class="contentBx">
-            <h2 class="heading"  style="color: #023b0a;"> We use cutting edge technology</h2>
-     <p class="text">
+            <h2 class="heading  wow slideInLeft" data-wow-delay="0.2s"style="color: #023b0a;"> We use cutting edge technology</h2>
+     <p class="text wow fadeInUp" data-wow-delay="0.3s">
          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia, repellat consectetur et quos assumenda incidunt esse voluptas sint nostrum.
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed excepturi optio ex, perspiciatis ea. </p>
         </div>
@@ -97,9 +110,9 @@
 
     <!-- Client -->
 
-    <section class="client">
-        <h2 class="heading" style="color: #ffa200;">Our Clients</h2>
-        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nesciunt excepturi suscipit voluptatibus, voluptate, eaque, porro hic quae assumenda atque non doloribus perspiciatis. Eaque voluptatibus iusto id eligendi error tenetur quaerat earum a architecto maxime, cum nulla, aliquam possimus nostrum!</p>
+    <section class="client" id="client">
+        <h2 class="heading wow slideInLeft" data-wow-delay="0.2s"style="color: #ffa200;">Our Clients</h2>
+        <p class="text  wow fadeInUp" data-wow-delay="0.3s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nesciunt excepturi suscipit voluptatibus, voluptate, eaque, porro hic quae assumenda atque non doloribus perspiciatis. Eaque voluptatibus iusto id eligendi error tenetur quaerat earum a architecto maxime, cum nulla, aliquam possimus nostrum!</p>
        
        
         <div class="imgBx">
@@ -114,24 +127,24 @@
     <!-- Testimonials -->
 
     <section class="testimonials">
-        <h2 class="heading"style="color: #ffa200;">
+        <h2 class="heading wow slideInLeft" data-wow-delay="0.2s" style="color: #ffa200;">
             What Our Client says
         </h2>
         <div class="container">
             <div class="contentBx">
             <div>
-                <p>
+                <p class=" wow fadeInUp" data-wow-delay="0.3s">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nam quo voluptatum quasi, obcaecati quas ex amet hic, modi illo inventore magnam! Commodi repudiandae explicabo et, minus illo eos corrupti!
                 </p><br>
-                <h3>Rebeccah Kwamboka</h3>
+                <h3 class=" wow fadeInUp" data-wow-delay="0.3s">Rebeccah Kwamboka</h3>
             </div>
         </div>
         <div class="contentBx">
             <div>
-                <p>
+                <p class=" wow fadeInUp" data-wow-delay="0.3s">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nam quo voluptatum quasi, obcaecati quas ex amet hic, modi illo inventore magnam! Commodi repudiandae explicabo et, minus illo eos corrupti!
                 </p><br>
-                <h3>Rebeccah Kwamboka</h3>
+                <h3 class=" wow fadeInUp" data-wow-delay="0.3s">Rebeccah Kwamboka</h3>
             </div>
         </div>
     </div>
@@ -141,9 +154,9 @@
 
     <!-- contact -->
 
-    <section class="contact">
-        <h2 class="heading"style="color: #ffa200;">Contact Us</h2>
-        <p class="text">
+    <section class="contact" id="contact">
+        <h2 class="heading wow slideInLeft" data-wow-delay="0.2s"style="color: #ffa200;">Contact Us</h2>
+        <p class="text wow fadeInUp" data-wow-delay="0.3s">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis voluptatem iusto. Est, laudantium aspernatur. Libero possimus est molestias quas nobis voluptas, eos voluptatum accusamus!
         </p>
     </section>
@@ -178,7 +191,7 @@
     <!-- footer -->
 
     <section class="footer">
-        <p class="text">RemitKenya remitkenya@gmail.com 07000000</p>
+        <p class="text wow slideInLeft" data-wow-delay="0.2s">RemitKenya remitkenya@gmail.com 07000000</p>
         <ul>
             <p class="text">Follow us on : </p>
             <li><a href=""><img src="assets/facebook.png" alt=""></a></li>
@@ -189,8 +202,16 @@
   
     </section>
 
+    <!-- greensock cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <script>
 
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 100
+});
+
+        var scroll = new SmoothScroll('a[href*="#"]');
         var menuBtn = document.getElementById("toggle")
         var sideNav = document.getElementById("sideNav")
 
@@ -204,7 +225,7 @@
               }
           }
           
-  
+          new WOW().init();
     </script>
 
     

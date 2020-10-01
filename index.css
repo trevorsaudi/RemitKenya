@@ -69,10 +69,10 @@
 .banner header .toggle{
     position: fixed;
     display: block;
-  right:30px ;
+    right:30px ;
     width: 36px;
     height: 28px;
-    background: url(assets/toggle.png);
+    background: url(assets/menu.png);
     background-size:cover ;
     cursor: pointer;
 }
