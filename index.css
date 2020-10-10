@@ -378,6 +378,11 @@ width: 50%;
         font-size: 36px;
     }
 
+    .banner header p{
+            font-size: 10px;
+    
+    }
+
     .banner .content p{
         font-size: 16px;
     }
