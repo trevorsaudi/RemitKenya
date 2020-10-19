@@ -1,54 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remit Kenya</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-
-
-      <!-- for on scroll animations -->
-
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <link rel="stylesheet" href="assets/animate.css">
-      <script src="assets/wow.min.js"></script>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <link rel="stylesheet" href="gallery.css"> 
+    </head>
 <body>
-    <!-- Banner -->
 
-
-    <div class="banner" id="home">
-        <header>
-            <a href="" class="logo wow fadeInUp" data-wow-delay="0.2s"> <span style="color: #ffa200;">Remit</span><span style="color: #023B0A;">Kenya</span> <br>  <p class="text">remitkenya@gmail.com 070000000</p></a>
-          
-            <div class="toggle" id="toggle"></div>
-        </header>
-        <img src="assets/bg3.jpg" alt="">
-        <div class="content">
-            <h2  style="color: #ffa200;" class="wow fadeInUp" data-wow-delay="0.4s">Research Solutions</h2>
-            <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem consequuntur officiis? Dolores ipsam, doloremque dolore alias deleniti consequuntur dolor.</p>
-        </div>
+    <div id="nav-placeholder">
 
     </div>
+    
+                <div class="banner" id="home">
+            
+        
+                    <img src="assets/bg3.jpg" alt="">
+                    <div class="content">
+                        <h2  style="color: #ffa200;" class="wow fadeInUp" data-wow-delay="0.4s">Research Solutions</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem consequuntur officiis? Dolores ipsam, doloremque dolore alias deleniti consequuntur dolor.</p>
+                    </div>
+            
+                </div>
 
-    <nav id="sideNav">
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="work.html" onload="window.open('work.html','_self')">OUR WORK</a></li>
-            <li><a href="#client">CLIENTS</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
-           
-           
-        </ul>
-    </nav>
-
- 
-
-
+     
+  
     <!-- About -->
     <section class="about" id="about">
         <div class="contentBx">
@@ -202,32 +182,13 @@
   
     </section>
 
-    <!-- greensock cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
     <script>
-
-var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 100
-});
-
-        var scroll = new SmoothScroll('a[href*="#"]');
-        var menuBtn = document.getElementById("toggle")
-        var sideNav = document.getElementById("sideNav")
-
-
-          sideNav.style.right = "-250px";
-          menuBtn.onclick = function(){
-              if(sideNav.style.right == "-250px"){
-                  sideNav.style.right = "0";
-              }else{
-                  sideNav.style.right = "-250px"
-              }
-          }
-          
-          new WOW().init();
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
     </script>
-
     
+
 </body>
 </html>
+    
