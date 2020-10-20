@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="about.css">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href="assets/animate.css">
-    <script src="assets/wow.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="about.css">
+        </head>
 <body>
-
-
-    <div class="about-section">
-       
-        <div class="inner-container">
-           
-            <h1 style="color: #ffa200;">About Us</h1>
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-            </p>
-            <div class="skills">
-                <span>Web Design</span>
-                <span>Photoshop & Illustrator</span>
-                <span>Coding</span>
-            </div>
-        </div>
    
     
-    </div>
-        <!-- greensock cdn -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-        <script>
-    
-    var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 100
-    });
-    
-            var scroll = new SmoothScroll('a[href*="#"]');
-            var menuBtn = document.getElementById("toggle")
-            var sideNav = document.getElementById("sideNav")
-    
-    
-              sideNav.style.right = "-250px";
-              menuBtn.onclick = function(){
-                  if(sideNav.style.right == "-250px"){
-                      sideNav.style.right = "0";
-                  }else{
-                      sideNav.style.right = "-250px"
-                  }
-              }
-              
-              new WOW().init();
-        </script>
-    
+    <div class="container">
+        <div class="card">
+            <div class="imgBx" data-text="Design">
+                    <img src="assets/sketch.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Design</h3>
+                    <p>Lorem ipsum, dolor sit amet
+                         consectetur adipisicing elit. Autem quas deserunt impedit cumque nam ipsa?
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx" data-text="Analysis">
+                    <img src="assets/hand.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Analysis</h3>
+                    <p>Lorem ipsum, dolor sit amet
+                         consectetur adipisicing elit. Autem quas deserunt impedit cumque nam ipsa?
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="Research">
+                    <img src="assets/startup.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Research</h3>
+                    <p>Lorem ipsum, dolor sit amet
+                         consectetur adipisicing elit. Autem quas deserunt impedit cumque nam ipsa?
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="Data">
+                    <img src="assets/data.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Data</h3>
+                    <p>Lorem ipsum, dolor sit amet
+                         consectetur adipisicing elit. Autem quas deserunt impedit cumque nam ipsa?
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
 </body>
 </html>
