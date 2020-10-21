@@ -58,7 +58,7 @@ body{
     left: -75px;
     top: calc(50% - 75px);
     transition: 0.5s ease-in-out;
-    background: #ff0057;
+    background: #ffa200;
 
 }
 .container .card .imgBx:before{
@@ -106,6 +106,7 @@ body{
     text-decoration: none;
     color: #fff;
 }
+
 @media (max-width: 992px){
     .container{
         width: 100%;
