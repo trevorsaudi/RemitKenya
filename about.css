@@ -6,17 +6,27 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-size: auto;
+  
+}
+.aboutus{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: #ffa200;
+    background-color: #060b0f;
     background-image: url(assets/asfalt-light.png) !important;
     background-position: center;
     background-repeat: repeat;
 }
-
-body{
+.wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #060b0f;
     min-height: 100vh;
+    background-image: url(assets/asfalt-light.png) !important;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .container{
